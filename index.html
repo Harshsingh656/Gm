@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Morning, Mom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+      text-align: center;
+      color: #333;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #6a0572;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+    .heart {
+      font-size: 2em;
+      color: red;
+      animation: pulse 1.5s infinite;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    button:hover {
+      background-color: #ff3b30;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Good Morning, Mom!</h1>
+    <p>
+      I hope you have the most beautiful day ahead. 🌞<br>
+      Today, I just want to say I'm sorry for all my mistakes and hurt I've caused you. <br>
+      <span class="heart">❤️</span>
+    </p>
+    <p>
+      Please talk to me, Mom. I love you so much and miss you deeply.
+    </p>
+    <button onclick="sendMessage()">Click Here to Let Me Know You Forgive Me</button>
+  </div>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="gm-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function sendMessage() {
+      alert("Thank you, Mom. I love you! 💕");
+    }
+  </script>
+</body>
+</html>
